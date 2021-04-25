@@ -7,9 +7,9 @@ Evolved from 'https://github.com/BAD-AL/SWBFII_Alt_Addon_System'
 It is meant to be a 'Drop and Click' process (after initial setup).
 
 ## Initial setup:
-1. Place the 'addon' folder under the '_LVL_<platform>' folder for the game you want to mod.
-1. Run the 'initial_setup_<platform>.bat' 
-1. Move the 'initial_setup_<platform>'.bat' files to the 'addon\\bin\\' folder (to de-clutter the 'addon' folder).
+1. Place the 'addon' folder under the '_LVL_platform' (PS2|PSP|XBOX) folder for the game you want to mod.
+1. Run the 'initial_setup_PS2.bat', 'initial_setup_PSP.bat' or 'initial_setup_XBOX.bat' file.
+1. Move the 'initial_setup_'.bat' files to the 'addon\\bin\\' folder (to de-clutter the 'addon' folder).
 
 
 Adding a mod:
