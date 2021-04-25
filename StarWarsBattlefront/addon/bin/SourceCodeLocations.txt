@@ -1,0 +1,18 @@
+The Source code for the various programs can be found at the following locations:
+
+luac.exe (5.0.2):
+	http://www.lua.org/ftp/
+
+MissionMerge.exe:
+	https://github.com/BAD-AL/SWBFII_Alt_Addon_System
+
+BF1LuaDC.exe: 
+	https://github.com/BAD-AL/BF1LuaDC
+
+LVLTool.exe:
+	https://github.com/BAD-AL/LVLTool
+
+SWBF2CodeHelper.exe:
+	https://github.com/BAD-AL/SWBF2_Xbox_mod_effort
+
+	
