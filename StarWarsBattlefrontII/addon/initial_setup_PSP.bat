@@ -21,7 +21,7 @@ if not exist BASE.CORE.LVL (
 	copy ..\MISSION.LVL BASE.MISSION.LVL 
 
 	:: Copy the shell to the right place 
-	copy SHELL\PSP\SHELL.LVL ..\SHELL\ENG\
+	copy SHELL\PSP\SHELL.LVL ..
 	:: Copy the ingame to the right place 
 	copy INGAME\PSP\INGAME.LVL ..
 ) else (

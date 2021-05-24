@@ -21,7 +21,7 @@ if not exist BASE.CORE.LVL (
 	copy ..\MISSION.LVL BASE.MISSION.LVL 
 
 	:: Copy the shell to the right place 
-	copy SHELL\PS2\SHELL.LVL ..\SHELL\ENG\
+	copy SHELL\PS2\SHELL.LVL ..
 	:: Copy the ingame to the right place 
 	copy INGAME\PS2\INGAME.LVL ..
 ) else (
