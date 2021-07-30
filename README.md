@@ -17,9 +17,9 @@ Adding a mod:
 1. Double-Click the 'click_to_merge.bat' program (in the addon folder )
 1. Deploy to device (if necessary)
 
-
-YouTube Video of Alt Addon system with AnthonyBF2's PSP mod:
-https://youtu.be/HyGFpVQ9VHQ
+## Videos (YouTube)
+* [Porting XBOX Addon to Alt Addon System and DLC package](https://youtu.be/LVhKMDW22AY)
+* [Alt Addon system with AnthonyBF2's PSP mod](https://youtu.be/HyGFpVQ9VHQ)
 
 <details> <summary>More info for modders</summary>
 
