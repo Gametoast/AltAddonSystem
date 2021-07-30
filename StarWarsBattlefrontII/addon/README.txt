@@ -1,12 +1,17 @@
 Setup for Star Wars Battlefront II   'Alternate' addon system 
 
 
+Porting map from PC to XBOX ('Alt Addon system' and DLC system):
+https://youtu.be/LVhKMDW22AY
+
+
 Addon system Video Demonstration (PSP BFII):
 https://www.youtube.com/watch?v=IRAVQtYu5KU
 
 Initial setup:
 Add the addon folder to the '_LVL_PS2', '_LVL_PSP' or 'LVL_XBOX' folder
 Run the enclosed 'initial_setup_PS2.bat', 'initial_setup_PSP.bat' or 'initial_setup_XBOX.bat'
+(this should create 'base.mission.lvl' and 'base.core.lvl' files as well as backup the originals)
 
 Once initial setup has run, you are advised to move all the initial_setup_<platform>.bat files to the 'bin' folder
 to de-clutter your 'addon' folder as they will no longer be needed and should not be run more than once.
@@ -20,4 +25,7 @@ Adding a mod:
      inside 'base.mission.lvl' and the missions from the mods mission.lvl files (this will be placed at the same 
      level as the 'addon' folder, deploy this too).
 3. Deploy to device (if necessary)
+
+NOTE:
+Folder '000' is reserved for shell/menu modifications.
 
