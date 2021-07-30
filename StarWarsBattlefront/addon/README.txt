@@ -1,6 +1,7 @@
 NOTE:
 The Alt addon system is in an 'Experimental' stage with SWBF (2004). It has been tested on XBOX BF1 and found to work. But it is not 'well' tested.
-On PS2, it basically doesn't work and has been incredibly frustrating to work on. If you find yourself badly wanting to mod BF1 PS2 I'd suggest using the 'bin\LVLTool.exe' program to replace the missionlist.lua file if you encounter issues with the alt addon system.
+On PS2, it basically doesn't work and has been incredibly frustrating to work on. If you find yourself badly wanting to mod BF1 PS2 I'd suggest 
+using the 'bin\LVLTool.exe' program to replace the missionlist.lua file in SHELL.LVL (if you encounter issues with the alt addon system)
 
 Setup for Star Wars Battlefront 1   'Alternate' addon system 
 
