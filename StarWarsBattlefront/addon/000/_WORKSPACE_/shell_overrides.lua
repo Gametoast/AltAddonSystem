@@ -25,6 +25,28 @@ shell_mod_overrides = {
 		missionlist           = "mod_missionlist"  
 }
 
+if( ScriptCB_GetPlatform() ~= "PS2" ) then
+	if( ScriptCB_IsFileExist("addon\\debug\\debug.lvl") == 1) then
+		ReadDataFile("addon\\debug\\debug.lvl")
+		ScriptCB_DoFile("debug")
+		print("did debug stuff ", "debug" )
+	end
+end
+
+-- uncomment for print debugging (PC only) -----
+---- debug log setup start
+--debug_log_name = "BFrontDebug.log"
+--debug_log = openfile(debug_log_name, "w+")
+--old_print = print
+--print = function( arg1, arg2, arg3, arg4)
+--    local print_this = (arg1 or "" )  .. (arg2 or "" ) .. (arg3 or "") .. (arg4 or "") .. " \n"
+--    write(debug_log, print_this)
+--    flush()
+--end
+--print("This goes to the 'BFrontDebug.log' file", " now.")
+---- debug log setup end
+--------------------------------
+
 origScriptCB_DoFile = ScriptCB_DoFile
 
 ScriptCB_DoFile = function(filename)
@@ -33,13 +55,13 @@ ScriptCB_DoFile = function(filename)
 	local i = 1 
 	local limit = getn(shell_mod_overrides)
 	local replacement = nil 
-	for key,value in shell_mod_overrides do 
-		if( key == filename) then 
+	for key,value in shell_mod_overrides do
+		if( key == filename) then
 			print("ScriptCB_DoFile: found a substitution for ".. tostring(key)..  " => ".. tostring(value), "debug" )
 			origScriptCB_DoFile(value)
-			return 
-		end 
-	end 
+			return
+		end
+	end
 	
 	print("ScriptCB_DoFile; no substitute found  ", "debug" )
 	origScriptCB_DoFile(filename)

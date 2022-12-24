@@ -1,5 +1,5 @@
 NOTE:
-The Alt addon system is in an 'Experimental' stage with SWBF (2004). It has been tested on XBOX BF1 and found to work. But it is not 'well' tested.
+The Alt addon system is in an 'Experimental' stage with SWBF (2004). It has been tested on PC and XBOX BF1 and found to work. But it is not 'well' tested.
 On PS2, it basically doesn't work and has been incredibly frustrating to work on. If you find yourself badly wanting to mod BF1 PS2 I'd suggest 
 using the 'bin\LVLTool.exe' program to replace the missionlist.lua file in SHELL.LVL (if you encounter issues with the alt addon system)
 
@@ -10,8 +10,8 @@ Addon system Video Demonstration (PSP BFII):
 https://www.youtube.com/watch?v=IRAVQtYu5KU
 
 Initial setup:
-Add the addon folder to the '_LVL_PS2' or 'LVL_XBOX' folder
-Run the enclosed 'initial_setup_PS2.bat' or 'initial_setup_XBOX.bat'
+Add the addon folder to the '_LVL_PS2', '_LVL_PC' or 'LVL_XBOX' folder
+Run the enclosed 'initial_setup_PS2.bat', 'initial_setup_PC.bat' or 'initial_setup_XBOX.bat'
 
 Once initial setup has run, you are advised to move all the initial_setup_<platform>.bat files to the 'bin' folder
 to de-clutter your 'addon' folder as they will no longer be needed and should not be run more than once.
@@ -34,3 +34,10 @@ PS2 Notes:
 PS2 BF1 does not support the function 'ScriptCB_IsFileExist()' and cannot therefore process the addon folder.
 In order to add missions to PS2, you'll need to modify the 'addon\000\_WORKSPACE_\mod_missionlist.lua' file.
 And run the 'addon\000\_WORKSPACE_\munge.bat' file.
+
+PC Notes:
+The included files are compatible with the Steam version of the game.
+If this does not work for you, you can try to modify the included lua files and replace 
+them with LVLTool in your shell.lvl.
+I've included a 'game_interface.lua' file that you can use with the steam game version 'common.lvl' to enable 
+the usage of 'SPTest.exe'. But you'll need to replace the script yourself with LVLTool.exe

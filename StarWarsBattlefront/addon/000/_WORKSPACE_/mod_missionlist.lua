@@ -64,26 +64,3 @@ SPCampaign_GCW = {
  { mapluafile = "end1a_h", side = 1, showstr = "ifs.sp.gcw.map9name", description = "ifs.sp.gcw.map9descr", movie = "end1fly", outtromovie = "end1h02", exitmovie = "end1h03", voiceover = "all_missionbriefing_end1", briefingmusic = "shell_clash", iconmodel = "com_icon_alliance"}
 }
 
-if( ScriptCB_GetPlatform() ~= "PS2") then 
-	-- PS2 doesn't have the 'ScriptCB_IsFileExist()' function  (sadface)
-	function ProcessAddons()
-		print("ProcessAddons: START ", "debug")
-		local addonFile = ""
-		local script_name = ""
-		local i = 0
-		while i < 1000 do 
-			addonFile = format("addon\\%03d\\addon%03d.lvl", i, i)
-			script_name = format("addon%03d", i)
-			if( ScriptCB_IsFileExist(addonFile) == 1) then 
-				print("processing: " .. addonFile, "debug")
-				ReadDataFile(addonFile)
-				ScriptCB_DoFile(script_name)
-			end 
-			i = i + 1
-		end 
-		print("ProcessAddons: DONE ", "debug")
-	end
-
-	ProcessAddons()
-	print("missionlist: End ", "debug")
-end 

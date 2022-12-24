@@ -52,12 +52,6 @@ end
 
 
 ------------------ Alt Addon Code ------------------
-if( ScriptCB_IsFileExist("addon\\debug\\debug.lvl") == 1) then  
-	ReadDataFile("addon\\debug\\debug.lvl")
-	ScriptCB_DoFile("debug")
-	print("did debug stuff ", "debug" )
-end 
-
 
 if( ScriptCB_IsFileExist("addon\\000\\shell_overrides.lvl") == 1) then  
 	ReadDataFile("addon\\000\\shell_overrides.lvl")
@@ -171,8 +165,27 @@ else
 	ifs_movietrans_PushScreen(ifs_boot)
 end 
 
+function ProcessAddons()
+	print("ProcessAddons: START ", "debug")
+	local addonFile = ""
+	local script_name = ""
+	local i = 0
+	while i < 1000 do 
+		addonFile = format("addon\\%03d\\addon%03d.lvl", i, i)
+		script_name = format("addon%03d", i)
+		if( ScriptCB_IsFileExist(addonFile) == 1) then 
+			print("processing: " .. addonFile, "debug")
+			ReadDataFile(addonFile)
+			ScriptCB_DoFile(script_name)
+		end 
+		i = i + 1
+	end 
+	print("ProcessAddons: DONE ", "debug")
+end
 
-SoundAndMovieSetup()
+ProcessAddons()
+
+ShellSoundAndMovieSetup()
 ---------------------------------
 
 --ScriptCB_DoFile("missionlist") is called in 'ifs_missionselect.lua' 

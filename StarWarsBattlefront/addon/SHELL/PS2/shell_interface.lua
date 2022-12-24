@@ -51,12 +51,6 @@ function ShellSoundAndMovieSetup()
 	ScriptCB_SetMovieAudioBus("shellmovies")
 end 
 
-
-ReadDataFile("addon\\debug\\debug.lvl")
-ScriptCB_DoFile("debug")
-print("did debug stuff ", "debug" )
-
-
 ReadDataFile("addon\\000\\shell_overrides.lvl")
 ScriptCB_DoFile("shell_overrides")
 print("did shell overrides ", "debug" )
